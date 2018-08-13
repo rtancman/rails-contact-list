@@ -1,7 +1,7 @@
 #!/bin/bash
 rm -f /var/app/tmp/pids/server.pid
 
-bundle check > /dev/null 2>&1 || bundle install --local
+bundle check > /dev/null 2>&1 || bundle install
 
 if [ "$#" == 0 ]
 then
