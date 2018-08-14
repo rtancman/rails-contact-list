@@ -1,6 +1,6 @@
 class StaticPagesController < ApplicationController
   def index
-    @name = "Tancman"
+    redirect_to contacts_path if user_signed_in?
   end
 
   def about
